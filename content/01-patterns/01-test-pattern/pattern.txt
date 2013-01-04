@@ -1,0 +1,10 @@
+Title: Test pattern
+----
+Description: this is the description of my pattern
+----
+HTML: this is my html
+----
+PHP: this is my php
+----
+CSS: this is my CSS
+----

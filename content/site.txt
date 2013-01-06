@@ -1,9 +1,6 @@
-Title: Kirby Demo
+Title: AblosMedia Pattern Library
 ----
-Author: Bastian Allgeier
+Author: Harrison Brown
 ----
-Description: Kirby is awesome
+Description: My own personal library of HTML, CSS and PHP patterns
 ----
-Keywords: kirby, cms, kirbycms, php, filesystem
-----
-Copyright: © 2009-(date: Year) (link: http://bastianallgeier.com text: Bastian Allgeier)

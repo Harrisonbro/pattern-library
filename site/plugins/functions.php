@@ -17,7 +17,7 @@ function get_pattern( $filename = null, $page = null ) {
   if( !has_pattern_file( $filename, $page ) ) { return false; } // Check input file exists
   else { 
     $file = $page->files()->find( $filename );
-    return file_get_contents( $file->root() ); 
+    return htmlspecialchars( file_get_contents( $file->root() ) ); 
   }
 } // END get_pattern_file()
 

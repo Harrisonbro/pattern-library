@@ -12,7 +12,7 @@
       if( has_pattern_file('php.php', $page) ) { echo get_pattern('php.php', $page); }
       if( has_pattern_file('html.html', $page) ) { echo get_pattern('html.html', $page); }
       if( has_pattern_file('css.css', $page) ) { echo get_pattern('css.css', $page); }
-
+      
     ?>
   </article>
 

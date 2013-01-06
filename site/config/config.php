@@ -441,3 +441,15 @@ array('.', '..', '.DS_Store', '.svn', '.git', '.htaccess');
 
 */
 c::set('content.file.ignore', array());
+
+/*
+------
+My own stuff
+------
+*/
+
+c::set( 'LIB_PATH', '/site/plugins/lib' ); 
+c::set( 'ASSETS_PATH', '/assets/images' ); 
+c::set( 'STYLES_PATH', '/assets/styles' ); 
+c::set( 'IMAGES_PATH', '/assets/images' ); 
+

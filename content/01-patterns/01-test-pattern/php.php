@@ -1,1 +1,3 @@
-this is the PHP for my pattern
+<?php 
+  // My PHP code
+?>

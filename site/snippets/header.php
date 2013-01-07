@@ -8,7 +8,8 @@
   <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
   <meta name="robots" content="index, follow" />
 
-  <?php echo css('assets/styles/all.css') ?>
+  <?php echo css('assets/styles/all.css'); ?>
+  <?php echo css('site/plugins/lib/snippet/jquery.snippet.css'); ?>
 
 </head>
 

@@ -4,6 +4,7 @@ $(document).ready(function(){
   $('#php').addClass('prettyprint linenums lang-php');
   $('#html').addClass('prettyprint linenums lang-html');
   $('#css').addClass('prettyprint linenums lang-css');
+  $('#js').addClass('prettyprint linenums lang-js');
   prettyPrint();
   
 });

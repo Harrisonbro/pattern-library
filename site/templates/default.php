@@ -8,21 +8,21 @@
   <?php echo kirbytext($page->description()); ?>
   
   <?php if( has_pattern_file('php.php', $page) ) : ?>
-  <div id="php" class="pattern-code">
-    <pre><?php echo get_pattern('php.php', $page); ?></pre>
-  </div><!-- #php -->
+  <pre id="php" class="pattern-code">
+    <?php echo get_pattern('php.php', $page); ?>
+  </pre><!-- #php -->
   <?php endif; ?>
   
   <?php if( has_pattern_file('html.html', $page) ) : ?>
-  <div id="html" class="pattern-code">
-    <pre><?php echo get_pattern('html.html', $page); ?></pre>
-  </div><!-- #html -->
+  <pre id="html" class="pattern-code">
+    <?php echo get_pattern('html.html', $page); ?>
+  </pre><!-- #html -->
   <?php endif; ?>
   
   <?php if( has_pattern_file('css.css', $page) ) : ?>
-  <div id="css" class="pattern-code">
-    <pre><?php echo get_pattern('css.css', $page); ?></pre>
-  </div><!-- #css -->
+  <pre id="css" class="pattern-code">
+    <?php echo get_pattern('css.css', $page); ?>
+  </pre><!-- #css -->
   <?php endif; ?>
 
 </section>

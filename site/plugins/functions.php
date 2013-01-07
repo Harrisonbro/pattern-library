@@ -17,7 +17,9 @@ function get_pattern( $filename = null, $page = null ) {
   if( !has_pattern_file( $filename, $page ) ) { return false; } // Check input file exists
   else { 
     $file = $page->files()->find( $filename );
-    return htmlspecialchars( file_get_contents( $file->root() ) ); 
+    $output = htmlspecialchars( file_get_contents( $file->root() ) ); 
+    $output = str_replace( "\t", '  ', $output ); // replace tabs with 2 spaces
+    return $output;
   }
 } // END get_pattern_file()
 

@@ -1,7 +1,5 @@
 /*
 * Remove text-shadow in selection highlight: h5bp.com/i
-* These selection declarations have to be separate.
-* Customize the background color to match your design.
 */
 
 ::-moz-selection {
@@ -9,20 +7,22 @@
   text-shadow: none;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+p {
+  margin-bottom: 1em;
 }
-
-/*
-* A better looking default horizontal rule
-*/
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+nav {
+  overflow: hidden;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  padding: 0.5em 0;
+}
+.nav,
+nav li {
+  list-style: none;
+  margin-right: 1em;
+  font-weight: bold;
+  float: left;
+}
+nav li a.active {
+  color: red;
 }

@@ -126,6 +126,13 @@ footer a:hover {
   color: #222;
 }
 
+.jump {
+  list-style: none; 
+  a:after { content: " »"; }
+  margin: 0; 
+}
+p + .jump { margin-top: -0.5em; }
+
 pre, 
 code {
   font-family: 'source code pro', monospace; 

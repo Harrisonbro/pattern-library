@@ -67,26 +67,26 @@ h1 {
   font-size: 2em;
   line-height: 1em;
   color: #222;
-  margin-bottom: 1em;
+  margin-bottom: 1/2em;
 }
 h2 {
   font-size: 1.5em;
   font-weight: normal;
   color: red;
-  margin-bottom: 1em;
+  margin-bottom: 0.5/1.5em;
 }
 h3 {
   font-weight: normal;
   font-size: 1.25em;
   color: #222;
-  margin-bottom: 1em;
+  margin-bottom: 0.5/1.25em;
 }
 h4 {
   color: red;
   font-weight: normal;
 }
 p {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 nav {
   overflow: hidden;
@@ -111,12 +111,11 @@ nav.submenu a {
   font-weight: normal;
 }
 section.content {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 footer {
   padding-top: 1em;
   margin-top: 1em;
-  border-top: 1px solid red;
   font-size: 0.8em;
   color: #222;
 }
@@ -142,4 +141,20 @@ code {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
   
   ol li { padding: 0 0.5em}
+  
+  position: relative; 
+  
+  &:before {
+    display: block; 
+    background: #586E75; 
+    outline: 1px solid #586E75; 
+    color: #FDF6E3; 
+    font-weight: bold; 
+    padding: 0 0.5em; 
+    position: relative; 
+    top: -0.5em; 
+  }
+  &#php:before { content: "PHP"; }
+  &#html:before { content: "HTML"; }
+  &#css:before { content: "CSS"; }
 }

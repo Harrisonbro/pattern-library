@@ -9,9 +9,9 @@
   <meta name="robots" content="index, follow" />
 
   <?php echo css('assets/styles/all.css'); ?>
-  <?php //echo css('site/plugins/lib/snippet/jquery.snippet.css'); ?>
   <?php echo css('site/plugins/lib/prettify/prettify.css'); ?>
   <?php echo css('site/plugins/lib/prettify/prettify.solarized.css'); ?>
+  <?php echo css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic'); ?>
 
 </head>
 

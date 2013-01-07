@@ -1,3 +1,25 @@
+.border-radius (@radius: 0.5em) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+.border-radius-top (@radius: 0.5em) {
+  -webkit-border-top-left-radius: @radius;
+  -webkit-border-top-right-radius: @radius;
+  -moz-border-radius-topleft: @radius;
+  -moz-border-radius-topright: @radius;
+  border-top-left-radius: @radius;
+  border-top-right-radius: @radius;
+}
+.border-radius-bottom (@radius: 0.5em) {
+  -webkit-border-bottom-left-radius: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+  -moz-border-radius-bottomleft: @radius;
+  -moz-border-radius-bottomright: @radius;
+  border-bottom-left-radius: @radius;
+  border-bottom-right-radius: @radius;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -8,14 +30,21 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'proxima nova', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.7em;
   background: #fff;
   color: #777;
   max-width: 75em;
   margin: 0 auto;
   padding: 4em; 
+  @media (max-width: 70em) {
+    padding: 2em 1em; 
+    font-size: 14px; 
+  }
+  @media (max-width: 40em) {
+    padding: 1em 0.5em; 
+  }
 }
 a {
   color: #222;
@@ -98,11 +127,19 @@ footer a:hover {
   color: #222;
 }
 
-pre, code {
+pre, 
+code {
+  font-family: 'source code pro', monospace; 
   margin: 1em 0; 
+  border: 1px solid darken(#FDF6E3,10%); 
+  padding: 0.5em 0; 
+  .border-radius-bottom(0.25em); 
+  
   white-space: pre-wrap;       /* css-3 */
   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
   white-space: -pre-wrap;      /* Opera 4-6 */
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  
+  ol li { padding: 0 0.5em}
 }

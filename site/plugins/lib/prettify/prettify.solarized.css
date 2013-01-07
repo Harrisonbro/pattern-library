@@ -25,7 +25,10 @@
   color: #268bd2;
 }
 
-.prettyprint .com,
+.prettyprint .com {
+  color: #879093;
+  font-style: italic;
+}
 .prettyprint .dec {
   color: #586e75;
   font-style: italic;

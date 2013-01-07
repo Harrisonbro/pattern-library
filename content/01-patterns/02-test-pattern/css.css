@@ -1,0 +1,28 @@
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+*/
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+p {
+  margin-bottom: 1em;
+}
+nav {
+  overflow: hidden;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  padding: 0.5em 0;
+}
+.nav,
+nav li {
+  list-style: none;
+  margin-right: 1em;
+  font-weight: bold;
+  float: left;
+}
+nav li a.active {
+  color: red;
+}

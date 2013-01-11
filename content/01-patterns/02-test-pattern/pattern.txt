@@ -1,3 +1,0 @@
-Title: Another pattern
-----
-Description: Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.

@@ -1,3 +1,0 @@
-Title: Test pattern
-----
-Description: this is the description of my pattern

@@ -1,0 +1,3 @@
+Title: WordPress definitions.php file
+----
+Description: To be included at the start of functions.php

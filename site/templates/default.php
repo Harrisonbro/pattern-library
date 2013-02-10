@@ -4,6 +4,19 @@
 
 <section class="content">
 
+  <?php 
+    $o = $page->children()->invisible()->_;
+    echo'<pre>'.print_r($o,1).'</pre>'; 
+/*
+    foreach($o as $page => $page_obj) {
+      echo'<pre>'.print_r($page,1).'</pre>';
+      foreach( $page_obj as $key => $value ) {
+        echo'<pre>'.print_r($key,1).'</pre>';
+      }
+    }
+*/
+  ?>
+
   <h2><?php echo html($page->title()); ?></h2>
   <?php echo kirbytext($page->description()); ?>
   <p>Jump to:

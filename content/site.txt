@@ -1,6 +1,0 @@
-Title: AblosMedia Pattern Library
-----
-Author: Harrison Brown
-----
-Description: My own personal library of HTML, CSS and PHP patterns
-----

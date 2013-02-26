@@ -1,5 +1,6 @@
 <?php 
 
+// Definitions
 $root = dirname(__FILE__); 
 $root_site = $root . '/site'; 
 $root_patterns: = $root . '/patterns'; 

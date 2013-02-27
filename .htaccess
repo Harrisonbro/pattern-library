@@ -1,11 +1,17 @@
 <IfModule mod_rewrite.c>
 
   RewriteEngine on
-  
-  # block text files in the patterns folder from being accessed directly
+  RewriteBase /
+
+  # block direct access to text files in patterns folder
   RewriteRule ^patterns/(.*)\.(txt|md|mdown)$ error [R=301,L]
   
-  # block all files in the site folder from being accessed directly
+  # block direct access to all files in site folder
   RewriteRule ^site/(.*) error [R=301,L]
+
+  RewriteRule ^index\.php$ - [L] 
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.php [L]
  
 </IfModule>

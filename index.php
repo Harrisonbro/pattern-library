@@ -1,9 +1,11 @@
 <?php 
 
+die('this is index'); 
+
 // Definitions
 $root = dirname(__FILE__); 
 $root_site = $root . '/site'; 
-$root_patterns: = $root . '/patterns'; 
+$root_patterns = $root . '/patterns'; 
 
 // Try to load system
 if( !file_exists($root_site . '/system.php') ) {

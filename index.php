@@ -1,7 +1,5 @@
 <?php 
 
-die('this is index'); 
-
 // Definitions
 $root = dirname(__FILE__); 
 $root_site = $root . '/site'; 

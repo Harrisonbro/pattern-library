@@ -1,3 +1,4 @@
+// Mixins
 .border-radius (@radius: 0.5em) {
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
@@ -19,7 +20,27 @@
   border-bottom-left-radius: @radius;
   border-bottom-right-radius: @radius;
 }
+.transition (@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  transition: @transition;
+}
 
+// Helper clases
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+// Main styles
 * {
   margin: 0px;
   padding: 0px;
@@ -37,14 +58,14 @@ body {
   color: #777;
   max-width: 75em;
   margin: 0 auto;
-  padding: 4em; 
+  padding: 2em; 
   @media (max-width: 70em) {
-    padding: 2em 1em; 
+    padding: 1em; 
     font-size: 14px; 
   }
   @media (max-width: 40em) {
     padding: 1em 0.5em; 
-    font-size: 12px; 
+    font-size: 13px; 
   }
 }
 a {
@@ -89,28 +110,7 @@ h4 {
 p {
   margin-bottom: 0.5em;
 }
-nav {
-  overflow: hidden;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
-  padding: 0.5em 0;
-}
-nav li {
-  list-style: none;
-  margin-right: 1em;
-  font-weight: bold;
-  float: left;
-}
-nav li a.active {
-  color: red;
-}
-nav.submenu {
-  border-top: none;
-  margin-bottom: 1em;
-}
-nav.submenu a {
-  font-weight: normal;
-}
+
 section.content {
   margin: 1em 0;
 }
@@ -126,6 +126,52 @@ footer a {
 footer a:hover {
   color: #222;
 }
+
+.mainmenu {
+  font-size: 0.8em; 
+  @media (max-width: 70em) { font-size: 0.9em; }
+  ul {
+    list-style: none; 
+    a { text-transform: uppercase; }
+    ul { 
+      margin-left: 1em; 
+      a { text-transform: none; }
+    }
+  }
+  li {
+    margin: 0.25em 0;
+  }
+  .active { font-weight: bold; }
+
+  &.hidden {
+    height: 0;
+    overflow: hidden; 
+  }
+
+} // END .main-menu
+
+@media (min-width: 60em) {
+  #mainmenu.hidden { height: auto; }
+  #menutoggle { display: none; }
+
+  #mainmenu {
+    float: left; 
+    width: 20%; 
+    margin-top: 1em; 
+  }
+  .content {
+    float: right; 
+    width: 75%; 
+  }
+}
+
+.breadcrumb {
+  text-transform: uppercase; 
+  font-size: 0.85em; 
+  a { color: #999; }
+  li { list-style: none; float: left; }
+  span { margin: 0 0.3em; color: #999; }
+} // END .breadcrumb
 
 .jump {
   list-style: none; 

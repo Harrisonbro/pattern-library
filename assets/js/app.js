@@ -6,5 +6,11 @@ $(document).ready(function(){
   $('#css').addClass('prettyprint linenums lang-css');
   $('#js').addClass('prettyprint linenums lang-js');
   prettyPrint();
+
+  // Menu reveal
+  $('#mainmenu').addClass('hidden'); 
+  $('#menutoggle').click(function(){
+    $('#mainmenu').toggleClass('hidden'); 
+  }); 
   
 });

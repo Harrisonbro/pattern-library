@@ -1,0 +1,7 @@
+Title: WordPress wp-config.php file
+----
+Description: This snippet is a fragment of WordPress's wp-config.php file that defines database variables depending on the environment. Specifically, it checks the value of {$_SERVER['HTTP_HOST']} to see what the domain name is.
+
+Two options (local and production) are defined here, but the pattern can extend to more environments (eg. staging).
+
+http://wp.tutsplus.com/tutorials/how-to-sync-a-local-remote-wordpress-blog-using-version-control/

@@ -1,0 +1,33 @@
+.def-list { 
+  list-style: none; 
+} 
+.ranked {
+  list-style: none; 
+  overflow: visible; 
+  counter-reset: li; 
+}
+.ranked > li {
+  display: table; 
+  table-layout: fixed; 
+  width: 100%; 
+  margin: 0.25em;
+}
+.ranked a {
+  display: table-cell; 
+  padding: 0.5em; 
+  background: yellow; 
+  color: red; 
+}
+.ranked > li:before {
+  content: counter(li); 
+  counter-increment: li;  
+  display: table-cell; 
+  /* define width so this cell doesn't cover 50% of parent */
+  width: 2em;
+  height: 100%; 
+  line-height: 100%; 
+  vertical-align: middle; 
+  text-align: right; 
+  background: lightgreen;
+  color: blue; 
+}

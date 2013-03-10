@@ -1,0 +1,19 @@
+/* Define the island structure */
+.island{
+  padding:20px;
+  margin-bottom:20px;
+}
+.island > :last-child{
+  margin-bottom:0; /* Remove the margin from the last child of a boxed off area so that we don't end up with compounded margin/padding spacings. */
+}
+
+/* Specific visual styles are then added on top */
+.promo{
+  border:1px solid #ff8;
+  background-color:#ffc;
+  color:#333;
+}
+.twitter{
+  color:#fff;
+  background-color:#00a0d1;
+}

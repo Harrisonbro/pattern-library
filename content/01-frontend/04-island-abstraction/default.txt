@@ -1,0 +1,5 @@
+﻿Title: The 'island' object
+
+----
+
+Text: Useful for creating boxes of content on the page. See (http://csswizardry.com/2011/10/the-island-object/)

@@ -1,0 +1,19 @@
+/*Abstraction*/
+.h-list {
+  list-style:none;
+  margin-left:0;
+}
+.h-list > li,
+.h-list > li > a {
+  display:inline-block;
+ *display:inline;
+  zoom:1;
+}
+/*Specific styles*/
+.breadcrumb {}
+.breadcrumb li:before {
+  content:"» "
+}
+.breadcrumb li:first-child:before {
+  content:normal;
+}

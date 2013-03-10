@@ -1,0 +1,5 @@
+﻿Title: Horizontal list abstraction
+
+----
+
+Text: Useful for navigation. See (http://csswizardry.com/2011/09/the-nav-abstraction/)

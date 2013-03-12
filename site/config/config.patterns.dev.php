@@ -7,4 +7,5 @@ if( is_dir('/Users/Harrison/Sites/- Repos/pattern-library [Harrisonbro]') ) {
 }
 
 c::set( 'SITE_PATH', $path );
+c::set('rewrite', false);
 

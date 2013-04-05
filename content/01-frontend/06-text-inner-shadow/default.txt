@@ -1,0 +1,5 @@
+﻿Title: Text inner shadow
+
+----
+
+Original: http://dabblet.com/gist/1609945

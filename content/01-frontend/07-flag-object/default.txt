@@ -1,0 +1,7 @@
+﻿Title: Flag (extd media) object
+
+----
+
+The flag object is like Nicole Sullivan's media block, but it also allows for vertical alignment.
+
+Original: http://jsfiddle.net/csswizardry/hErrh/

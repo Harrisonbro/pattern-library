@@ -9,12 +9,12 @@ $db_collate = '';
 /*
  * Variables that change based on environment
  */
-if( $_SERVER['HTTP_HOST'] === 'domain.com' ) {
+if( stristr($_SERVER['HTTP_HOST'], 'domain.com') ) {
   $db_name = ''; 
   $db_username = ''; 
   $db_password = ''; 
   $db_host = ''; 
-} else if ( $_SERVER['HTTP_HOST'] === 'domain.dev' ) {
+} elseif ( stristr($_SERVER['HTTP_HOST'], 'domain.dev') ) {
   $db_name = ''; 
   $db_username = 'root'; 
   $db_password = 'password'; 

@@ -1,0 +1,43 @@
+<!-- Add .shortlist, .thumb, .summary or .detail class as CSS hooks to style each view of the article object -->
+ <article class="story" itemscope="itemscope" itemtype="http://schema.org/NewsArticle">
+   <meta content="en" itemprop="inLanguage" />
+   <header>
+      <h1 itemprop="headline">story heading</h1>
+      <div class="image thumb"><img src="…" alt="…" itemprop="image"/></div>
+      <div class="meta">
+         <div class="author">
+            <span class="dt">label:</span><span class="dd" itemprop="author">value</span>
+         </div>
+         <div class="publishDate">
+            <span class="dt">label:</span><span class="dd" itemprop="datePublished">value</span>
+         </div>
+         <div class="section">
+            <span class="dt">label:</span><span class="dd" itemprop="articleSection">value</span>
+         </div>
+         <div class="publishedIn">
+            <span class="dt">label:</span><span class="dd">value</span>
+         </div>
+      </div>
+      <div class="abstract" itemprop="description">
+         <p> … </p>
+      </div>
+      <div class="actions">
+         <ul>
+            <li class="recommend">…</li>
+            …
+            <li class="print">…</li>
+         </ul>
+      </div>
+   </header>
+   <div class="main">
+      <div class="content" itemprop="articleBody"> … </div>
+      <aside>
+         <section class="storyList">
+            <div class="main">
+               <article class="story" itemscope="itemscope" itemtype="http://schema.org/NewsArticle">…</article>
+            </div>
+         </section>
+      </aside>
+   </div>
+   <footer> (used for read more links, links to comment section, etc.) </footer>
+ <article>

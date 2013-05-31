@@ -1,0 +1,3 @@
+Title: News story
+----
+Description: Example of reusable HTML component from http://coding.smashingmagazine.com/2012/10/23/road-reusable-html-components/

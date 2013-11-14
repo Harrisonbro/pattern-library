@@ -1,0 +1,7 @@
+﻿Title: Tabs object.
+
+----
+
+Uses table layout CSS to make equal width tabs (nav items) 
+
+Original: http://jsfiddle.net/csswizardry/zfSt4/
